@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>618购物节</title>
+	<style type="text/css">
+    #shopping {
+	    position: absolute;
+	    width: 100%;
+	    height: 1296px;
+	    z-index: 1;
+	    left: 0px;
+	    top: 0px;
+    }
+    #shopping  #daohanglan {
+	    height: 70px;
+	    width: 100%;
+	    background-color: #313131;
+    }
+    #shopping  #daohanglan #daohangzhongbu  {
+	    height: 70px;
+	    width: 1050px;
+	    margin-right: auto;
+	    margin-left: auto;
+    }
+    #shopping  #daohanglan #daohangzhongbu #logo {
+	    height: 32px;
+	    width: 150px;
+	    padding-top: 19px;
+	    padding-left: 50px;
+	    float: left;
+    }
+
+    #shopping #daohanglan #daohangzhongbu #my-daohanglan{
+	    height: 60px;
+	    width: 700px;
+	    padding-top: 5px;
+	    padding-left: 85px;
+	    float: left;
+	    position: absolute;
+	    margin-left: 200px;
+	    font-family: "微软雅黑";
+	    font-size: 14px;
+    }
+
+    #shopping #daohanglan #daohangzhongbu #my-daohanglan ul li{ /*导航栏相关定义*/
+	    width:105px;
+	    height:49px;
+	    text-align:center;
+	    line-height:35px;
+	    float:left;
+	    list-style:none;
+	    margin-left:0px;
+	    padding:0px;
+	    list-style-type:none;
+	    background:#313131;
+
+	
+	}
+    #shopping #banner {
+	    height: 400px;
+	    width: 1050px;
+	    margin-right: auto;
+	    margin-left: auto;
+	    margin-top: 15px;
+	    background-image: url(image\banner.png);
+    }
+    #shopping #banner:hover {
+
+	    background-image: url(images/banner02.jpg);
+    }
+    #shopping #daohanglan #daohangzhongbu #my-daohanglan ul li ul{
+	    display:none;
+	    margin-left:0px;
+	    margin:0px;
+	    padding:0px;
+	    list-style-type:none;
+	}
+    #shopping #daohanglan #daohangzhongbu #my-daohanglan ul li:hover ul{
+	    display:block;
+	}
+    #shopping #daohanglan #daohangzhongbu #my-daohanglan ul li:hover{ /*导航栏高亮*/
+	    border-bottom-width: 2px;
+	    border-bottom-style: solid;
+	    border-bottom-color: #ef2300;
+	}
+	/*横向导航结束*/
+
+
+    #shopping #tuijian {
+	    height: 270px;
+	    width: 1050px;
+	    margin-right: auto;
+	    margin-left: auto;
+	    margin-top: 20px;
+    }
+    #shopping #tuijian #tuijian01 {
+	    float: left;
+	    height: 270px;
+	    width: 290px;
+    }
+    #shopping  #tuijian #tuijian01 #tuijiantu {
+	    height: 204px;
+    }
+    #shopping  #tuijian #tuijian01 #tuijianwenzi {
+	    height: 66px;
+	    font-family: "微软雅黑";
+	    font-size: 14px;
+	    color: #282828;
+	    width: 290px;
+    }
+    #shopping #tuijian #tuijian02 {
+	    float: left;
+	    height: 270px;
+	    width: 290px;
+	    margin-left: 90px;
+    }
+    #shopping #tuijian #tuijian02 #tuijiantu2 {
+	    height: 204px;
+    }
+    #shopping #tuijian #tuijian02 #tuijianwenzi2 {
+	    height: 66px;
+	    font-family: "微软雅黑";
+	    font-size: 14px;
+	    color: #282828;
+	    width: 290px;
+    }
+    a.blue:link {
+	    color: #179acc;
+	    text-decoration: none;
+    }
+    a.blue:visited {
+	    text-decoration: none;
+	    color: #179acc;
+    }
+    a.blue:hover {
+	    text-decoration: none;
+	    color: #ef2300;
+    }
+    a.blue:active {
+	    text-decoration: none;
+    }
+
+    a:link {
+	    color: #FFF;
+	    text-decoration: none;
+    }
+    a.black:link {
+	    color: #000000;
+	    text-decoration: none;
+    }
+    a.black:visited {
+	    text-decoration: none;
+	    color: #000000;
+    }
+    a.black:hover {
+	    text-decoration: none;
+	    color: #ef2300;
+    }
+    a.black:active {
+	    text-decoration: none;
+    }
+
+    a:link {
+	    color: #FFF;
+	    text-decoration: none;
+    }
+    a:visited {
+	    text-decoration: none;
+	    color: #FFF;
+}
+    a:hover {
+	    text-decoration: none;
+	    color: #ef2300;
+    }
+    a:active {
+	    text-decoration: none;
+    }
+    #shopping #xinwen {
+	    height: 360px;
+	    width: 1050px;
+	    margin-top: 35px;
+	    margin-right: auto;
+	    margin-left: auto;
+	    background-color: #fcfcfc;
+	    border: 1px solid #f1f1f1;
+    }
+    #shopping #xinwen #xinwenzi {
+	    float: left;
+	    height: 280px;
+	    width: 420px;
+	    margin-top: 40px;
+	    margin-left: 80px;
+	    font-family: "微软雅黑";
+	    font-size: 13px;
+	    color: #000;
+	    line-height: 39px;
+    }
+    #shopping #dibu {
+	    background-color: #313131;
+	    height: 80px;
+	    width: 100%;
+	    margin-top: 50px;
+}
+    #shopping #danghanglan #daohangzhongbu{
+	    height: 80px;
+	    width: 1050px;
+	    margin-right: auto;
+	    margin-left: auto;
+	    font-family: "微软雅黑";
+	    font-size: 12px;
+	    color: #FFF;
+}
+    .banner{
+
+    }
+</style>
+</head>
+<body>
+	<div id="shopping">
+  <div id="daohanglan">
+    <div id="daohangzhongbu">
+      <div id="logo"><a href="index.html"><img src="image/logo.png" width="32" height="32" border="0"/></a></div>
+      <!-- 下拉导航开始 --> 
+  <div id="my-daohanglan" >
+  <ul>
+	  <li><a href="index.html" >首页</a></li>
+      <li><a href="pinpai.html" >品牌介绍</a></li>
+      <li><a href="chuangshiren.html" >创始人简介</a></li>
+	  <li><a href="#" >产品线</a> <img src="images/xiajiantou.svg" width="12" height="12">
+		  <ul>
+				<li><a href="7xilie.html" >7系列</a></li>
+				<li><a href="7txilie.html" >7T系列</a></li>
+			</ul>
+        </li>
+      <li><a href="shangcheng.html" >一加商城</a></li>
+      <li><a href="women.html">联系我们</a></li>
+	</ul>
+    </div>
+         <!-- 下拉导航结束 --> 
+    <div class="shuru">
+    	    用户名：<input type="text" name="username" value="请输入姓名"/>
+            密码：<input type="password" name="password" value=""/>
+            搜索：<input type="text" name="sreach"/>
+    </div>
+    </div>
+    </div>
+    <div class="banner">
+   	    <center><img src="image/banner.png"></center></div>
+    <div id="tuijian">
+    <div id="tuijian01">
+      <div id="tuijiantu"><a href="#"><img src="image/推荐1.jpg" width="290" height="204" /></a></div>
+      <div class="tuijianwenzi"><table width="100%" border="0">
+  <tr>
+    <td height="40">OnePlus 7T 系列获全球多家媒体好评</td>
+  </tr>
+  <tr>
+    <td><a href="#" class="blue">了解更多</a></td>
+  </tr>
+</table>
+</div>
+    </div>
+    
+    <div id="tuijian02">
+      <div id="tuijiantu2"><a href="#"><img src="image/推荐2.jpg" width="290" height="204" /></a></div>
+      <div id="tuijianwenzi2"><table width="100%" border="0">
+  <tr>
+    <td height="40">「美无边界 动则有灵」一碗美食 背后的故事</td>
+  </tr>
+  <tr>
+    <td><a href="#" class="blue">&nbsp; 了解更多</a></td>
+  </tr>
+</table>
+</div>
+    </div>
+    <div id="tuijian02">
+      <div id="tuijiantu2"><a href="#"><img src="image/推荐3.jpg" width="290" height="204" /></a></div>
+      <div id="tuijianwenzi2"><table width="100%" border="0">
+  <tr>
+    <td height="40">「Nike」 新款Nike首发 等你选购</td>
+  </tr>
+  <tr>
+    <td><a href="#" class="blue">&nbsp; 了解更多</a></td>
+  </tr>
+</table>
+</div>
+    </div>
+    
+  </div>
+  <div id="xinwen">
+    <div id="xinwenzi"><a href="#" class="black">【话题互动】你的一加手机用了多久？寻找最长情加油..</a><br />
+    <a href="#" class="black">拍照不输iPhone，流畅更胜一筹“细品”一加7T Pro迈凯伦版</a> <br />
+    <a href="#" class="black">【OnePlus 7T系列体验官】冰川银，给你好看</a> <br />
+    <a href="#" class="black">
+【OnePlus7T体验官】一加7T让你赢在起跑线，做行走的摄...</a> <br />
+    <a href="#" class="black">
+【一加7T系列开箱】标杆该有的样子</a> <br />
+    <a href="#" class="black">【OnePlus7T系列体验官】不一样的7T Pro，不一样的蓝</a> <br />
+<a href="#" class="black">
+【OnePlus 7T系列体验官】冰际蓝——冰川的那一抹蓝</a> <br />
+   
+</div>
+    <div id="xinwenzi">
+    <a href="#" class="black">
+OnePlus 7T 系列线上预售全线开启，快来抢购吧！</a> <br />
+    <a href="#" class="black">
+OnePlus 7T 系列保障服务公告，详情请点击此处查阅</a> <br />
+    <a href="#" class="black">
+【招募贴】禅定模式21天早睡挑战来了！让你告别夜猫生活</a> <br />
+    <a href="#" class="black">
+一加7T系列购买攻略 心动指南看这里，看这一篇就够了</a> <br />
+    <a href="#" class="black">
+【一加7T来了】设计之美源于细节，真的不一样。</a> <br />
+    <a href="#" class="black">
+不一样的视觉，一样的 Never Settle</a> <br />
+    <a href="#" class="black">
+OnePlus 7 系列，购机福利享不停！</a> <br />
+    </div>
+  </div>
+  <div id="dibu">
+    <div id="dibuzhongbu">
+    <table width="1048" border="0">
+  <tr>
+    <td align="center">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="center">&nbsp;&nbsp; 618购物节</td>
+  </tr>
+  <tr>
+    <td align="center">@2020.6.18 等你狂欢</td>
+  </tr>
+</table>
+
+    </div>
+  </div>
+</div>
+	
+</body>
+</html>
